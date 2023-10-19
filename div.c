@@ -8,10 +8,11 @@
 void f_div(stack_t **head, unsigned int counter)
 {
 	stack_t *tmp;
-	int d, nodes;
+	int d, nodes = 0;
 
 	tmp = *head;
-	while (tmp){
+	while (tmp)
+	{
 		nodes++;
 		tmp = tmp->next;
 	}
