@@ -11,8 +11,7 @@ void f_div(stack_t **head, unsigned int counter)
 	int d, nodes;
 
 	tmp = *head;
-	while(tmp)
-	{
+	while (tmp){
 		nodes++;
 		tmp = tmp->next;
 	}
