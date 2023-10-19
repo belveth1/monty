@@ -18,7 +18,7 @@ void f_mul(stack_t **head, unsigned int counter)
         }
 	if (nodes < 2)
 	{
-		fprintf(stderr, "L%d: can't mul, stack too short", counter);
+		fprintf(stderr, "L%d: can't mul, stack too short\n", counter);
 		fclose(store.file);
                 free(store.data);
                 free_stack(*head);
