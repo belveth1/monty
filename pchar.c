@@ -14,18 +14,18 @@ void f_pchar(stack_t **head, unsigned int counter)
 	if (!tmp)
 	{
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", counter);
-		 fclose(store.file);
-                free(store.data);
-                free_stack(*head);
-                exit(EXIT_FAILURE);
-        }
+		fclose(store.file);
+		free(store.data);
+		free_stack(*head);
+		exit(EXIT_FAILURE);
+	}
 	if (tmp->n > 127 || tmp->n <  0)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", counter);
-		 fclose(store.file);
-                free(store.data);
-                free_stack(*head);
-                exit(EXIT_FAILURE);
-        }
-	printf("%c\n",tmp->n);
+		fclose(store.file);
+		free(store.data);
+		free_stack(*head);
+		exit(EXIT_FAILURE);
+	}
+	printf("%c\n", tmp->n);
 }

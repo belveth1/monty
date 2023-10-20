@@ -1,10 +1,10 @@
 #include "monty.h"
-
 store_t store = {NULL, NULL, NULL, 0};
+
 /**
 * main - monty code interpreter
-* @argc: number of arguments
-* @argv: monty file location
+* @ac: number of arguments
+* @av: monty file location
 * Return: 0 on success
 */
 int main(int ac, char **av)
@@ -15,7 +15,6 @@ int main(int ac, char **av)
 	unsigned int counter = 0;
 	ssize_t read_line = 1;
 	size_t n = 0;
-
 
 
 	if (ac != 2)

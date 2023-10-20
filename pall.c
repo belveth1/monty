@@ -13,7 +13,7 @@ void f_pall(stack_t **head, unsigned int counter)
 	if (*head == NULL)
 		return;
 	tmp = *head;
-	while(tmp)
+	while (tmp)
 	{
 		printf("%d\n", tmp->n);
 		tmp = tmp->next;

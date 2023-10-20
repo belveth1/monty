@@ -4,8 +4,8 @@
 * @stack: head linked list - stack
 * @counter: line_counter
 * @file: poiner to monty file
-* @content: line content
-* Return: no return
+* @data: line content
+* Return: int data
 */
 int execute(char *data, stack_t **stack, unsigned int counter, FILE *file)
 {
