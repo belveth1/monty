@@ -29,9 +29,9 @@ void f_div(stack_t **head, unsigned int counter)
 	{
 		fprintf(stderr, "L%d: division by zero\n", counter);
 		fclose(store.file);
-                free(store.data);
-                free_stack(*head);
-                exit(EXIT_FAILURE);
+		free(store.data);
+		free_stack(*head);
+		exit(EXIT_FAILURE);
 	}
 	d = tmp->next->n / tmp->n;
 	tmp->next->n = d;
